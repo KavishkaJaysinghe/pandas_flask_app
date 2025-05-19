@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <title>Simple Pandas App</title>
+    <style>
+        .data { font-family: Arial; border-collapse: collapse; width: 50%; }
+        .data td, .data th { border: 1px solid #ddd; padding: 8px; }
+        form { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>CSV Data Viewer</h1>
+
+    <form method="POST">
+        <input type="text" name="search" placeholder="Search by name">
+        <input type="submit" value="Search">
+    </form>
+
+    {{ tables|safe }}
+</body>
+</html>
+ 
